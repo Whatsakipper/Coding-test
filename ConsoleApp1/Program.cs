@@ -26,6 +26,7 @@ namespace ConsoleApp1
                 {
                     myDeck.newDeck();
                     Console.WriteLine("New deck created.");
+                    topCard = 0;
                 }
 
                 if (input.Equals("S", StringComparison.OrdinalIgnoreCase))
@@ -36,8 +37,13 @@ namespace ConsoleApp1
                 
                 if (input.Equals("D", StringComparison.OrdinalIgnoreCase))
                 {
+                    if(topcard < 52)
+                    {
                     myDeck.drawCard(topCard);
                     topCard++;
+                    }
+                    else
+                    Console.WriteLine(“No more cards are left in the deck.”);
                 }
 
                 if (input.Equals("R", StringComparison.OrdinalIgnoreCase))
