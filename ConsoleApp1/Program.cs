@@ -37,13 +37,13 @@ namespace ConsoleApp1
                 
                 if (input.Equals("D", StringComparison.OrdinalIgnoreCase))
                 {
-                    if(topcard < 52)
+                    if(topCard < 52)
                     {
                     myDeck.drawCard(topCard);
                     topCard++;
                     }
                     else
-                    Console.WriteLine(“No more cards are left in the deck.”);
+                    Console.WriteLine("There are no more cards left in the deck.");
                 }
 
                 if (input.Equals("R", StringComparison.OrdinalIgnoreCase))
